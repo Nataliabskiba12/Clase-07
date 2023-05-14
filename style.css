@@ -1,0 +1,143 @@
+/* Estilos base para los contenedores de color */
+
+.container {
+    display: grid;
+    height: 500px;
+    width: 100%;
+    grid-column-gap: 7px;
+    grid-row-gap: 7px;
+}
+
+
+/* Estilos específicos para cada color */
+
+.red-color {
+    background-color: red;
+}
+
+.blue-color {
+    background-color: blue;
+}
+
+.purple-color {
+    background-color: purple;
+}
+
+.green-color {
+    background-color: green;
+}
+
+.yellow-color {
+    background-color: yellow;
+}
+
+.orange-color {
+    background-color: orange;
+}
+
+.black-color {
+    background-color: black;
+}
+
+.beige-color {
+    background-color: beige;
+}
+
+.gray-color {
+    background-color: gray;
+}
+
+
+/* Media queries para diferentes tamaños de pantalla */
+
+@media (max-width: 320px) {
+    .green-color,
+    .yellow-color,
+    .orange-color,
+    .black-color,
+    .beige-color,
+    .gray-color {
+        display: none;
+    }
+    /*no es necesario*/
+    .red-color {
+        grid-column-start: 1;
+    }
+    .blue-color {
+        grid-column-start: 1;
+    }
+    .purple-color {
+        grid-column-start: 1;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .black-color,
+    .beige-color,
+    .gray-color {
+        display: none;
+    }
+    .red-color {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .blue-color {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    .purple-color {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    .green-color {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .yellow-color {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .orange-color {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+}
+
+@media (min-width: 769px) {
+    .red-color {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    .blue-color {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    .purple-color {
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
+    .green-color {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    .yellow-color {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    .orange-color {
+        grid-row-start: 2;
+        grid-column-start: 3;
+    }
+    .black-color {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+    .beige-color {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+    .gray-color {
+        grid-row-start: 3;
+        grid-column-start: 3;
+    }
+}
